@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Progress Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Student Progress Tracker</h1>
+
+    <!-- Add Test Form -->
+    <form id="testForm">
+      <h2>Add a Test</h2>
+      <input type="text" id="testName" placeholder="Test Name" required />
+      <input type="text" id="subject" placeholder="Subject/Topic" required />
+      <input type="number" id="marks" placeholder="Marks Scored" required />
+      <input type="number" id="total" placeholder="Total Marks" required />
+      <button type="submit">Add Test</button>
+    </form>
+
+    <!-- Progress Section -->
+    <div class="progress">
+      <h2>Progress Overview</h2>
+      <p id="averageScore">Average Score: N/A</p>
+      <p id="suggestion">Suggestions will appear here.</p>
+    </div>
+
+    <!-- Test Records -->
+    <div class="records">
+      <h2>All Tests</h2>
+      <ul id="testList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
